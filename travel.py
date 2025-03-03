@@ -22,14 +22,14 @@ prompt_template = ChatPromptTemplate.from_messages([
 #logic-2
 #choosing a best model for step-2
 # import google.generativeai as genai
-# genai.configure(api_key="AIzaSyBhTcKEi5DmBT4SQoBR9-hpW7f7VcL5yqg")
+# genai.configure(api_key="add API key here")
 
 #step-1 : importing google genAI chat model
 from langchain_google_genai import ChatGoogleGenerativeAI
 
 #step-2 : setting google API to the model  
-# chat_model = ChatGoogleGenerativeAI(model = 'models/gemini-1.5-pro-latest',google_api_key='')
-
+# chat_model = ChatGoogleGenerativeAI(model = 'models/gemini-1.5-pro-latest',google_api_key='add API key here')
+#or open API key text file
 with open("google_api.txt", "r") as file:
     # Read the entire content of the file
     GOOGLE_API_KEY = file.read().strip()
